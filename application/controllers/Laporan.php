@@ -25,7 +25,7 @@ class Laporan extends CI_Controller {
         $produk_id = $this->input->post('produk_id');
         $sales_id = $this->input->post('sales_id');
 
-        $data['laporan'] = $this->laporan_model->get_laporan($tanggal_awal, $tanggal_akhir, $produk_id, $sales_id);
+        $data['laporan'] = $this->laporan_model->get_laporan($tanggal_awal, $tanggal_akhir, $produk       _id, $sales_id);
         $data['tanggal_awal'] = $tanggal_awal;
         $data['tanggal_akhir'] = $tanggal_akhir;
 
